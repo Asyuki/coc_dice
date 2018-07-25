@@ -23,3 +23,37 @@ function futeikyouki() {
 	var put_kyouki = document.getElementById("futei");
 	put_kyouki.innerHTML = kyouki[i];
 }
+
+function taikou() {
+
+	var a;
+	var b;
+	var work;
+	var suc;
+	var i;
+	var result;
+
+	a = document.getElementById("active").value;
+	b = document.getElementById("passive").value; 
+	work = a - b;
+
+	suc = 50;
+	suc = suc + work * 5
+
+	var put_suc = document.getElementById("percent");
+	put_suc.innerHTML = '能動側成功値 ' + suc ;
+
+	i = Math.floor(Math.random() * 100) + 1;
+
+	var dice_result = document.getElementById("kekka");
+	dice_result.innerHTML = i;
+
+	if (suc >= i) {
+		result = '能動側の成功';
+	}else {
+		result = '受動側の成功';
+	}
+
+	var put_result = document.getElementById("taikou");
+	put_result.innerHTML = result;
+}

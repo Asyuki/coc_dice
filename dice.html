@@ -3,11 +3,20 @@
 <head>
 	<title>coc_dice</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width" >
 </head>
 <body>
 
 一時的狂気 <input type="button" value="発狂" onclick="itijikyouki();"><br><span id="itiji"></span><br>
-不定の狂気 <input type="button" value="発狂" onclick="futeikyouki();"><br><span id="futei"></span><br>
+不定の狂気 <input type="button" value="発狂" onclick="futeikyouki();"><br><span id="futei"></span><br><br>
+対抗ロール<br>
+能動側能力値<input type="number" id="active" value="0" style="width: 3em;"><br><br>
+
+受動側能力値<input type="number" id="passive" value="0" style="width: 3em;"><br>
+<input type="button" value="計算" onclick="taikou();"><br>
+<span id="percent"></span><br>
+<span id="kekka"></span>&nbsp;
+<span id="taikou"></span>
 <script type="text/javascript" src="dice.js"></script>
 </body>
 </html>
