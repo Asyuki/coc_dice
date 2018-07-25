@@ -8,7 +8,7 @@ function itijikyouki() {
 	i =  Math.floor(Math.random() * kyouki.length);
 
 	var put_kyouki = document.getElementById("itiji");
-	put_kyouki.innerHTML = kyouki[i];
+	put_kyouki.innerHTML = i + kyouki[i];
 }
 function futeikyouki() {
 	var kyouki = ['健忘症(親しい者のことを最初に忘れる。言語や肉体的な技能は働くが、知的な技能は働かない)あるいは昏迷/緊張症',
@@ -21,7 +21,7 @@ function futeikyouki() {
 	i =  Math.floor(Math.random() * kyouki.length);
 
 	var put_kyouki = document.getElementById("futei");
-	put_kyouki.innerHTML = kyouki[i];
+	put_kyouki.innerHTML = i + kyouki[i];
 }
 
 function taikou() {
