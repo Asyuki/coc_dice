@@ -5,10 +5,12 @@ function itijikyouki() {
 	'奇妙なもの、異様なものを食べたがる(泥、粘着物、人肉など)',
 	'昏迷(胎児のような姿勢をとる、物事を忘れる)あるいは緊張症(特定の状況での過緊張)'];
 	var i;
+	var i_save;
 	i =  Math.floor(Math.random() * kyouki.length);
+	i_save = i + 1;
 
 	var put_kyouki = document.getElementById("itiji");
-	put_kyouki.innerHTML = i + kyouki[i];
+	put_kyouki.innerHTML = i_save + " " + kyouki[i];
 }
 function futeikyouki() {
 	var kyouki = ['健忘症(親しい者のことを最初に忘れる。言語や肉体的な技能は働くが、知的な技能は働かない)あるいは昏迷/緊張症',
@@ -19,9 +21,10 @@ function futeikyouki() {
 	'強迫観念に取り付かれた行動'];
 	var i;
 	i =  Math.floor(Math.random() * kyouki.length);
+	i_save = i + 1;
 
 	var put_kyouki = document.getElementById("futei");
-	put_kyouki.innerHTML = i + kyouki[i];
+	put_kyouki.innerHTML = i_save + " " + kyouki[i];
 }
 
 function taikou() {
